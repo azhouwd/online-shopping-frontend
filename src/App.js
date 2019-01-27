@@ -22,7 +22,6 @@ class App extends React.Component {
 		sizefilter: false,
 		filteredlist: [],
 		cartlist:[],
-		images:[],
 		route:'notsignedin',
 		user:{
 			id:null,
@@ -49,9 +48,6 @@ class App extends React.Component {
 			  	 this.setRoute('signedin')
 			  })
 		}
-		fetch("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=3x0FnfZT83D9M9Y0ObZdB2uuQ6D9JnN1&limit=40")
-		.then(response=>response.json())
-		.then(result=>this.setState({images:result.data}))
 
 		fetch("https://react-shopping-cart-67954.firebaseio.com/products.json")
 		.then(response=>response.json())
@@ -185,7 +181,7 @@ class App extends React.Component {
 	}
 
 render() {
-	const { products,sizefilter,filteredlist,cartlist,toggleCart,route,user,images } = this.state;
+	const { products,sizefilter,filteredlist,cartlist,toggleCart,route,user } = this.state;
 	console.log(user);
 	console.log(this.state.products)
 	return(
@@ -193,7 +189,7 @@ render() {
 	<Navigation setRoute={this.setRoute} route={route} onSignOutClick={this.onSignOutClick}/>
 	<div className='container'>
 		<SortSize sortSize={this.sortSize} removeFilter={this.removeFilter} sortByPrice={this.sortByPrice} sortByName={this.sortByName}/>
-		<ProductList product={products} onAddClick={this.onAddClick} images={images}
+		<ProductList product={products} onAddClick={this.onAddClick}
 					 sizefilter={sizefilter} filteredlist={filteredlist} />
 		<button className="showcart" onClick={this.onToggle} >{'Cart'}</button>
 		<Modal>

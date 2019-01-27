@@ -2,15 +2,11 @@ import React from 'react';
 import ProductItem from './ProductItem.js';
 import './ProductList.css';
 
-const ProductList = ({product,onAddClick,sizefilter,filteredlist,images}) => {
-	for(let i=0;i<product.length;i++){
-		product[i]['url'] = images[i+23].images.fixed_height_small.url;
-	}
-
+const ProductList = ({product,onAddClick,sizefilter,filteredlist}) => {
 	const result = product.map(el=>{
 		return (
 			<div key={el.id} className='items_nofilter' >
-				<ProductItem name={el.title} price={el.price} images={el.url}
+				<ProductItem name={el.title} price={el.price}
 				shipping={el.isFreeShipping?'Free Shipping':'Paid Shipping'} sizes={el.availableSizes}/>
 				<button className='addButton' onClick={()=>onAddClick(el.title)} >{'Add to Cart'}</button>
 			</div>
@@ -20,7 +16,7 @@ const ProductList = ({product,onAddClick,sizefilter,filteredlist,images}) => {
 	const filtered = filteredlist.map(el=>{
 		return (
 			<div key={el.id} className='items_filtered' >
-				<ProductItem name={el.title} price={el.price} images={el.url}
+				<ProductItem name={el.title} price={el.price}
 				shipping={el.isFreeShipping ? 'Free Shipping':'Paid Shipping'} sizes={el.availableSizes}/>
 				<button className='addButton' onClick={()=>onAddClick(el.title)} >{'Add to Cart'}</button>
 			</div>
