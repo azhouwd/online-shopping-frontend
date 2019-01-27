@@ -1,0 +1,50 @@
+.showcart{
+	position:fixed;
+	right:0;
+	top:0;
+	height: 60px;
+	width:60px;
+	border:1px solid white;
+	background: black;
+	color:white;
+	font-size: 20px;
+	font-family: Times New Roman;
+}
+
+.showcart:hover{
+	cursor: pointer;
+}
+
+.cartregion{
+	height: 800px;
+	width:400px;
+	background: #071519;
+	position:fixed;
+	right:0;
+	top:0;
+	z-index: 1;
+}
+
+.close{
+	font-size: 2rem;
+	font-style: bold;
+	cursor:pointer;
+	position: relative;
+	right:0;
+	height: 50px;
+	color:white;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr 6fr 0.5fr;
+}
+
+.filtered{
+	display: flex;
+}
+
+.addButton:hover{
+	background: orange;
+}
+

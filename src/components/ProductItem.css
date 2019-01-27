@@ -1,0 +1,25 @@
+.item_detail{
+	width:230px ;
+	height:370px;
+	text-align: center;
+}
+
+#item_price{
+	position:relative;
+	bottom: 4px;
+}
+
+#item_name{
+	text-align: center;
+	vertical-align: center;
+}
+
+img {
+	width: 230px;
+	height:210px;
+}
+
+h3{
+	margin-top: 10px;
+	height: 35px;
+}

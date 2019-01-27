@@ -1,0 +1,38 @@
+.products{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.items_nofilter{
+	margin-left: 20px;
+	box-shadow: 5px 10px 12px grey;
+	margin-right:25px;
+	margin-top:30px;
+}
+
+.filtered{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.items_filtered{
+	margin-left: 15px;
+	margin-top:20px;
+	border:solid 1.5px #9ab0d3;
+}
+
+.addButton{
+	width:230px;
+	height: 40px;
+	text-align: center;
+	margin-top:3px;
+	color:white;
+	background: black;
+	font-size: 19px;
+	font-family: Times New Roman;
+	cursor: pointer;
+	margin-bottom:2px;
+	border-radius: 30px;
+}

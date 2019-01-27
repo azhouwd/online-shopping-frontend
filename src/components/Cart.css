@@ -1,0 +1,44 @@
+.cart {
+	background: grey;
+	width: 100%;
+	margin:0;
+}
+
+.cart_item{
+	text-align: center;
+	border-style: solid;
+	border-width: 1px 0px;
+	border-color: grey;
+}
+
+.remove_item{
+	font-size:2rem;
+	font-style: bold;
+	cursor:pointer;
+	margin-top:0;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0px;
+}
+
+.cart_stuff{
+	display: flex;
+	flex-direction: column;
+}
+
+.showcart{
+	margin-top: 300px;
+}
+
+.checkout{
+	height: 50px;
+	font-size: 20px;
+	background: black;
+	color:white;
+}
+
+.checkout:hover{
+	background: white;
+	color: black;
+	cursor: pointer;
+}

@@ -1,0 +1,14 @@
+#navigation{
+	display:flex;
+	justify-content: flex-end;
+	box-shadow: 0px 5px 15px grey;
+	align-items: center;
+}
+
+.navItem{
+	margin-right: 15px;
+}
+
+.navItem:hover{
+	cursor: pointer;
+}
