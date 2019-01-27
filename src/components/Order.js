@@ -11,7 +11,7 @@ class Order extends React.Component {
 	}
 
 	componentDidMount(){
-		fetch(`http://localhost:3000/getOrderHistory/${this.state.user_id}`,{
+		fetch(`https://mysterious-earth-64717.herokuapp.com/getOrderHistory/${this.state.user_id}`,{
 			method:'get',
 			headers:{'Content-Type':'application/json'}
 		})

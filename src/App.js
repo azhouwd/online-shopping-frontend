@@ -37,7 +37,7 @@ class App extends React.Component {
 	componentDidMount() {
 		const authToken = window.sessionStorage.getItem('token');
 		if(authToken){
-			fetch('http://localhost:3000/signin',{
+			fetch('https://mysterious-earth-64717.herokuapp.com/signin',{
 				method:'post',
 				headers:{
 					'Content-Type':'application/json',
@@ -65,7 +65,7 @@ class App extends React.Component {
 	}
 
 	loadUser = (data) => {
-		fetch(`http://localhost:3000/profile/${data.id}`,{
+		fetch(`https://mysterious-earth-64717.herokuapp.com/profile/${data.id}`,{
 			method: 'get',
 			authorization: window.sessionStorage.getItem('token')
 		})
@@ -152,7 +152,7 @@ class App extends React.Component {
 		}
 		const order_id = shortid.generate();
 		this.state.cartlist.forEach(data=>{
-			fetch('http://localhost:3000/checkout',{
+			fetch('https://mysterious-earth-64717.herokuapp.com/checkout',{
 				method:'post',
 				headers:{
 					'Content-Type':'application/json',

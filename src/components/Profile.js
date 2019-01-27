@@ -25,7 +25,7 @@ class Profile extends React.Component {
 	}
 
 	onSaveClick = (user) => {
-		fetch('http://localhost:3000/updateProfile',{
+		fetch('https://mysterious-earth-64717.herokuapp.com/updateProfile',{
 			method:'post',
 			headers:{'Content-Type':'application/json'},
 			body:JSON.stringify({
