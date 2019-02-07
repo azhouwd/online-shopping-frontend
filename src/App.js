@@ -1,8 +1,8 @@
 import React from 'react';
+import './App.css';
 import ProductList from './components/ProductList.js';
 import Cart from './components/Cart.js';
 import Scroll from './components/Scroll.js';
-import './App.css';
 import Modal from './components/Modal.js';
 import SortSize from './components/SortSize.js';
 import Navigation from './components/Navigation.js';

@@ -7,6 +7,7 @@ const ProductItem = ({name,price,shipping,images,sizes}) => {
 	})
 	return(
 		<div className='item_detail'>
+			<img src={require(`../images/${images}_1.jpg`)} alt={name} />
 		   <h3 id='item_name'>{name}</h3>
 		   <p id='item_shipping'>{shipping}</p>
 		   <p id='item_price'>{`$${price}`}</p>
