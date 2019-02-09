@@ -33,6 +33,10 @@ class Register extends React.Component {
 		this.setState({address:event.target.value});
 	}
 
+	saveAuthToSession = (token) => {
+		window.sessionStorage.setItem('token',token);
+	}
+
 	onRegisterClick = () => {
 		fetch('https://mysterious-earth-64717.herokuapp.com/register',{
 			method:'post',
@@ -48,6 +52,7 @@ class Register extends React.Component {
 		.then(res=>res.json())
 		.then(user=>{
 			if(user.id){
+				this.saveAuthToSession(user.token);
 				this.props.loadUser(user);
 				this.props.setRoute('signedin');
 			}
