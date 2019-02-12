@@ -18,9 +18,10 @@
 }
 
 .items_filtered{
-	margin-left: 15px;
-	margin-top:20px;
-	border:solid 1.5px #9ab0d3;
+	margin-left: 20px;
+	box-shadow: 5px 10px 12px grey;
+	margin-right:25px;
+	margin-top:30px;
 }
 
 .addButton{
