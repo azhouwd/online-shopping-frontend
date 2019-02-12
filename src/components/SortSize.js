@@ -13,8 +13,8 @@ const SortSize = ({sortSize,removeFilter,sortByPrice,sortByName}) => {
 				<button className='sortbtn' onClick={removeFilter}>Cancel</button>
 			</div>
 			<div style={{display:'flex',marginLeft:'30px',flexWrap:'wrap',flexDirection:'column',marginTop:'80px'}}>
-				<button style={{width:'150px',height:'20px'}} onClick={sortByPrice}>Sort By Price</button>
-				<button style={{width:'150px',height:'20px'}} onClick={sortByName}>Sort By Name</button>
+				<button style={{width:'130px',height:'30px',marginBottom:'10px',borderRadius:'10px'}} onClick={sortByPrice}>Sort By Price</button>
+				<button style={{width:'130px',height:'30px',marginBottom:'10px',borderRadius:'10px'}} onClick={sortByName}>Sort By Name</button>
 			</div>
 		</div>
 	)
