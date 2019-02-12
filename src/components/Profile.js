@@ -45,7 +45,7 @@ class Profile extends React.Component {
 		return (
 			<div className='personalInfoContainer'>
 			<div className="profilebox">
-		    <h1 style={{color:'white'}} >Personal Information</h1>
+		    <h1 style={{color:'white',fontFamily:'fantasy'}} >Personal Information</h1>
 		    <hr />
 		    <div className='personalInfo'>
 		    	<label>Name: <i>{name}</i></label>

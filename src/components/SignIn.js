@@ -45,7 +45,7 @@ class SignIn extends React.Component {
 		return (
 		   <div className='signinContainer'>
 			<div className="signinbox">
-		    <h1 id='signintext'>Sign In</h1>
+		    <h1 id='signintext' style={{fontFamily:'fantasy'}} >Sign In</h1>
 		    <hr />
 		    <div className='personalInfo' >
 			  <input type="text" placeholder="Email" required onChange={this.onEmailChange}/>
