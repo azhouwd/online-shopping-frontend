@@ -8,4 +8,9 @@
 
 .sortbtn:hover{
 	cursor: pointer;
+	color: orange;
+}
+
+.sortbtn:focus {
+	outline: 0;
 }

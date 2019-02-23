@@ -11,4 +11,5 @@
 
 .navItem:hover{
 	cursor: pointer;
+	color:orange;
 }
